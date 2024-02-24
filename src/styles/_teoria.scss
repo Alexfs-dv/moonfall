@@ -1,0 +1,33 @@
+@use 'variables';
+
+.theory {
+    background-color: variables.$corDeFundoTeoria;
+    padding: 5.6vw;
+    color: variables.$corTextoPrincipal;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    letter-spacing: 2px;
+    height: 100vh;
+
+    &__text__container {
+        padding: 0 2vw;
+        margin-top: 48px;
+    }
+
+    img {
+        max-width: 95%;
+        border-radius: 8px;
+        margin-top: 48px;
+    }
+
+    h2 {
+        font-family: variables.$fontPrincipal;
+        padding-bottom: 24px;
+    }
+
+    p {
+        font-family: variables.$fontPrincipal;
+        margin-top: 12px;
+    }
+}

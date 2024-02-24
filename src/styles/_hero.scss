@@ -1,0 +1,56 @@
+@use 'variables';
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding: 5.6vw;
+    min-height: 100vh;
+    background: linear-gradient(rgba(0,0,0, .4), rgba(0,0,0, .5)), url("../images/hero_desktop.jpg");
+    background-size: cover;
+    background-position: center;
+
+    &__content {
+        max-width: 960px;
+        margin: 0 auto;
+    }
+
+    &__starring {
+        display: flex;
+        justify-content: space-around;
+        color: variables.$corTextoPrincipal;
+
+        &__name {
+            color: variables.$corTextoPrincipal;
+
+            p {
+                font-family: variables.$fontPrincipal;
+                letter-spacing: 3px;
+            }
+        }
+    }
+
+    h1 {
+        font-family: orbitron, sans-serif;
+        font-weight: 700;
+        color: variables.$corTextoPrincipal;
+    }
+
+    &__play {
+        display: flex;
+        margin-top: 5.6vw;
+        a {
+            display: flex;
+            color: variables.$corTextoPrincipal;
+
+            p {
+                padding: 8px;
+                margin-top: 8px;
+                letter-spacing: 3px;
+                text-transform: uppercase;
+            }
+        }
+    }
+}
+

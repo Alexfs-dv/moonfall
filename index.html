@@ -4,9 +4,96 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Moonfall</title>
+    <!--GOOGLE FONTS-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <!--BOOTSTRAP ICONS-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!--CSS-->
     <link rel="stylesheet" href="./dist/css/main.css">
 </head>
 <body>
-    
+    <header class="header">
+        <div class="header__container">
+            <ul class="header__links">
+                <li class="header__links__item">
+                    <a href="#sinopse">
+                        Sinopse
+                    </a>
+                </li>
+                <li class="header__links__item">
+                    <a href="#theory">
+                        A teoria
+                    </a>
+                </li>
+                <li class="header__links__item">
+                    <a href="#the-director">
+                        O diretor
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <section class="hero">
+        <div class="hero__content">
+            <ul class="hero__starring">
+                <li class="hero__starring__name">
+                    <p class="text">Halle</p>
+                    <p class="text--big">Berry</p>
+                </li>
+                <li class="hero__starring__name">
+                    <p class="text">Patrick</p>
+                    <p class="text--big">Wilson</p>
+                </li>
+                <li class="hero__starring__name">
+                    <p class="text">John</p>
+                    <p class="text--big">Bradley</p>
+                </li>
+            </ul>
+            <h1 class="title--big">moonfall</h1>
+            <div class="hero__play">
+                <a href="https://www.youtube.com/watch?v=ivIwdQBlS10" class="text">
+                    <i class="bi-play-circle" style="font-size: 3rem; color: #fff;"></i>
+                    <p>Assista ao trailer</p>
+                </a>
+            </div>
+        </div>
+    </section>
+    <section class="sinopse" id="sinopse">
+        <img src="./dist/images/impacto_lunar.jpg" alt="Impacto lunar">
+        <div class="sinopse__text__container">
+            <h2 class="title">Ameaça Lunar</h2>
+            <p>Um desacreditado astronauta e o seu grupo tem a missão de salvar a humanidade quando a Lua sai de sua órbita e entra em rota de colisão com a Terra.</p>
+            <ul class="sinopse__text__classification">
+                <li>Classificação - 12 anos</li>
+                <li>Ficção científica/Ação</li>
+                <li>130 min</li>
+            </ul>
+        </div>
+    </section>
+    <section class="theory" id="theory">
+        <img src="./dist/images/lua_observacao.jpg" alt="Observação da lua">
+        <div class="theory__text__container">
+            <h2 class="title">A teoria</h2>
+            <p>A lua é motivo de fascínio desde de sempre para a humanidade. A teoria de que nosso satélite natural não seja natural surgiu após um experimento da missão Apollo 12. Os astronautas intencionalmente deixaram cair o módulo lunar sobre a superfície da lua, então os sismógrafos na lua detectaram um som que foi descrito como um gongo ou um sino que se prolongou por 8 minutos.</p>
+            <p>Em 1970 os cientistas soviéticos Alexander Shcherbakov e Mikhail Vasin levaram a ideia da Lua oca adiante ao assinarem um artigo intitulado “A Lua é uma criação de seres inteligentes?”, publicado em uma revista popular da URSS. No texto, os pesquisadores levantaram a hipótese estranha de que o satélite natural da Terra teria sido criado por uma raça extraterrestre. A hipótese ficou conhecida como Teoria Vasin-Shcherbakov.</p>
+        </div>
+    </section>
+    <section class="the-director" id="the-director">
+        <img src="./dist/images/roland_emmerich.jpg" alt="O diretor">
+        <div class="the-director__text__container">
+            <h2 class="title">O diretor</h2>
+            <p>Roland Emmerich é um cineasta e roteirista alemão. Seus filmes geraram lucros de mais de US$ 3 bilhões de doláres, mais de que qualquer outro diretor europeu.</p>
+            <p>Tendo em sua lista de trabalhos realizados filmes de grande bilheteria como:</p>
+            <ul>
+                <li>-Independence day - 1996;</li>
+                <li>-O patriota - 2000;</li>
+                <li>-O dia depois de amanhã - 2004;</li>
+                <li>-2012 - 2009;</li>
+            </ul>
+            <p>Entre tantos outros filmes de sucesso.</p>
+        </div>
+    </section>
 </body>
 </html>

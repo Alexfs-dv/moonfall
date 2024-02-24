@@ -1,0 +1,67 @@
+@use 'variables';
+@use 'header';
+@use 'hero';
+@use 'sinopse';
+@use 'teoria';
+@use 'director';
+
+@font-face {
+    font-family: Roboto;
+    src: url(../../assents/fonts/Roboto-Regular.ttf);
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: Roboto;
+    src: url(../../assents/fonts/Roboto-Bold.ttf);
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: orbitron;
+    src: url(../../assents/fonts/Orbitron-Bold.ttf);
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: orbitron;
+    src: url(../../assents/fonts/Orbitron-Regular.ttf);
+    font-weight: 400;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: Roboto, sans-serif
+}
+
+@mixin text($fontSize: 18px){
+    font-size: $fontSize;
+    color: variables.$corTextoPrincipal;
+}
+
+@mixin title($fontSize: 40px){
+    font-size: $fontSize;
+    color: variables.$corTextoPrincipal;
+}
+
+.title--big {
+    @include title(172px);
+    letter-spacing: 12px;
+}
+
+.title {
+    @include title;
+}
+
+.text--big {
+    @include text(40px);
+}
+
+.text {
+    @include text;
+}
+

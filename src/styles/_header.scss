@@ -1,0 +1,25 @@
+.header {
+    
+    &__container {
+        position: absolute;
+        right: 50px;
+        padding: 16px 36px;
+    }
+
+    &__links {
+        display: flex;
+        font-size: 16px;
+
+        &__item {
+            padding: 16px;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            font-weight: bold;
+
+            a {
+                color: #fff;
+            }
+        }
+    }
+
+}

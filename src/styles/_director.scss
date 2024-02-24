@@ -1,0 +1,44 @@
+@use 'variables';
+
+.the-director {
+    padding: 5.6vw;
+    background-color: variables.$corDeFundoSinopse;
+    color: variables.$corTextoPrincipal;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    letter-spacing: 2px;
+    height: 100vh;
+    align-items: center;
+
+    &__text__container {
+        padding: 0 2vw;
+        margin-top: 48px;
+
+        ul {
+            padding-top: 16px;
+            list-style-type: circle;
+
+            li {
+                font-family: variables.$fontPrincipal;
+            }
+        }
+    }
+
+
+    img {
+        max-width: 95%;
+        border-radius: 8px;
+    }
+
+    h2 {
+        font-family: variables.$fontPrincipal;
+        padding-bottom: 24px;
+    }
+
+    p {
+        font-family: variables.$fontPrincipal;
+        margin-top: 12px;
+    }
+
+    
+}
