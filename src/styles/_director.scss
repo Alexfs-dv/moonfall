@@ -1,8 +1,10 @@
 @use 'variables';
 
 .the-director {
+    background: linear-gradient(rgba(4,7,20, .9), rgba(4,7,20, .9)), url("../images/bg_diretor.jpg");
+    background-size: cover;
+    background-position: center;;
     padding: 5.6vw;
-    background-color: variables.$corDeFundoSinopse;
     color: variables.$corTextoPrincipal;
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -10,13 +12,22 @@
     height: 100vh;
     align-items: center;
 
+    @media(max-width: 768px){
+        display: block;
+        padding: 3vw;
+    }
+
+
     &__text__container {
         padding: 0 2vw;
         margin-top: 48px;
 
+        @media(max-width: 768px){
+            text-align: justify;
+        }
+
         ul {
             padding-top: 16px;
-            list-style-type: circle;
 
             li {
                 font-family: variables.$fontPrincipal;
@@ -28,6 +39,12 @@
     img {
         max-width: 95%;
         border-radius: 8px;
+        margin-top: 48px;
+
+        @media(max-width: 768px){
+            max-width: 100%;
+            margin-top: 28px;
+        }
     }
 
     h2 {

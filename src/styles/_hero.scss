@@ -25,21 +25,28 @@
             color: variables.$corTextoPrincipal;
 
             p {
-                font-family: variables.$fontPrincipal;
                 letter-spacing: 3px;
             }
         }
     }
 
     h1 {
-        font-family: orbitron, sans-serif;
         font-weight: 700;
         color: variables.$corTextoPrincipal;
+
+        @media(max-width: 768px){
+            margin-top: 20px;
+        }
     }
 
     &__play {
         display: flex;
         margin-top: 5.6vw;
+
+        @media(max-width: 768px){
+            position:absolute;
+            bottom: 100px;
+        }
         a {
             display: flex;
             color: variables.$corTextoPrincipal;
@@ -49,6 +56,11 @@
                 margin-top: 8px;
                 letter-spacing: 3px;
                 text-transform: uppercase;
+                font-family: roboto, sans-serif;
+
+                @media(max-width: 768px){
+                    margin-top: 16px;
+                }
             }
         }
     }

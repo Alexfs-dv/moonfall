@@ -1,7 +1,9 @@
 @use 'variables';
 
 .theory {
-    background-color: variables.$corDeFundoTeoria;
+    background: linear-gradient(rgba(87,96,111, .85), rgba(87,96,111, .85)), url("../images/bg_teoria.jpg");
+    background-size: cover;
+    background-position: center;
     padding: 5.6vw;
     color: variables.$corTextoPrincipal;
     display: grid;
@@ -10,24 +12,45 @@
     letter-spacing: 2px;
     height: 100vh;
 
+    @media(max-width: 768px){
+        display: block;
+        padding: 3vw;
+    }
+
     &__text__container {
         padding: 0 2vw;
         margin-top: 48px;
+
+        @media(max-width: 768px){
+            margin-top: 28px;
+            text-align: justify;
+        }
     }
 
     img {
         max-width: 95%;
         border-radius: 8px;
         margin-top: 48px;
+
+        @media(max-width: 768px){
+            max-width: 100%;
+            margin-top: 28px;
+        }
     }
 
     h2 {
-        font-family: variables.$fontPrincipal;
         padding-bottom: 24px;
+
+        @media(max-width: 768px){
+            padding-bottom: 14px;
+        }
     }
 
     p {
-        font-family: variables.$fontPrincipal;
         margin-top: 12px;
+
+        @media(max-width: 768px){
+            margin-top: 6px;
+        }
     }
 }

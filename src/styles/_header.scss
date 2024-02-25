@@ -1,14 +1,40 @@
+@use 'variables';
+
 .header {
-    
-    &__container {
-        position: absolute;
-        right: 50px;
-        padding: 16px 36px;
+    width: 100%;
+    position: fixed;
+    padding: 0 46px;
+    z-index: 1;
+    background-color: variables.$corDeFundoSinopse;
+    transition: background-color 1s ease;
+
+    @media(max-width: 768px){
+        padding: 0 26px;
+    }
+
+    &__home {
+        position: fixed;
+        right: 5.6vw;
+        top: 90vh;
+        display: none;
+    }
+
+    &--is-hidden {
+        background-color: transparent;
+        transition: background-color 1s ease;
     }
 
     &__links {
         display: flex;
+        justify-content: end;
+        padding: 12px 5.6vw 12px 0;
         font-size: 16px;
+
+        @media(max-width:768px){
+            font-size: 12px;
+            justify-content: space-between;
+            margin-left: 15px;
+        }
 
         &__item {
             padding: 16px;
@@ -16,8 +42,14 @@
             letter-spacing: 3px;
             font-weight: bold;
 
+            @media(max-width: 768px){
+                padding: 4px;
+                padding-top: 16px;
+            }
+
             a {
                 color: #fff;
+                font-family: roboto, sans-serif;
             }
         }
     }

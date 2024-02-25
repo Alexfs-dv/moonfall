@@ -4,6 +4,7 @@
 @use 'sinopse';
 @use 'teoria';
 @use 'director';
+@use 'starring';
 
 @font-face {
     font-family: Roboto;
@@ -35,7 +36,12 @@
     box-sizing: border-box;
     list-style: none;
     text-decoration: none;
-    font-family: Roboto, sans-serif
+    font-family: variables.$fontPrincipal;
+}
+
+.container {
+    width: 1080px;
+    max-width: 100%;
 }
 
 @mixin text($fontSize: 18px){
@@ -51,17 +57,42 @@
 .title--big {
     @include title(172px);
     letter-spacing: 12px;
+
+    @media(max-width: 768px){
+        @include title(52px)
+    }
 }
 
 .title {
     @include title;
+
+    @media(max-width: 768px){
+        @include text(18px)
+    }
 }
 
 .text--big {
     @include text(40px);
+
+    @media(max-width: 768px){
+        @include text(18px)
+    }
 }
 
 .text {
     @include text;
+
+    @media(max-width: 768px){
+        @include text(12px)
+    }
 }
+
+.text--small {
+    @include text(14px);
+
+    @media(max-width: 768px){
+        @include text(12px)
+    }
+}
+
 

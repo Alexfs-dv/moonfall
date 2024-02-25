@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="./dist/css/main.css">
 </head>
 <body>
-    <header class="header">
+    <header class="header header--is-hidden">
         <div class="header__container">
             <ul class="header__links">
                 <li class="header__links__item">
@@ -34,8 +34,13 @@
                 </li>
             </ul>
         </div>
+        <div class="header__home" id="home-icon">
+            <a href="#hero">
+                <i class="bi-house" style="color: #fff; font-size: 2rem;"></i>
+            </a>
+        </div>
     </header>
-    <section class="hero">
+    <section class="hero" id="hero">
         <div class="hero__content">
             <ul class="hero__starring">
                 <li class="hero__starring__name">
@@ -64,8 +69,8 @@
         <img src="./dist/images/impacto_lunar.jpg" alt="Impacto lunar">
         <div class="sinopse__text__container">
             <h2 class="title">Ameaça Lunar</h2>
-            <p>Um desacreditado astronauta e o seu grupo tem a missão de salvar a humanidade quando a Lua sai de sua órbita e entra em rota de colisão com a Terra.</p>
-            <ul class="sinopse__text__classification">
+            <p class="text--small">Um desacreditado astronauta e o seu grupo tem a missão de salvar a humanidade quando a Lua sai de sua órbita e entra em rota de colisão com a Terra.</p>
+            <ul class="sinopse__text__classification text--small">
                 <li>Classificação - 12 anos</li>
                 <li>Ficção científica/Ação</li>
                 <li>130 min</li>
@@ -76,24 +81,176 @@
         <img src="./dist/images/lua_observacao.jpg" alt="Observação da lua">
         <div class="theory__text__container">
             <h2 class="title">A teoria</h2>
-            <p>A lua é motivo de fascínio desde de sempre para a humanidade. A teoria de que nosso satélite natural não seja natural surgiu após um experimento da missão Apollo 12. Os astronautas intencionalmente deixaram cair o módulo lunar sobre a superfície da lua, então os sismógrafos na lua detectaram um som que foi descrito como um gongo ou um sino que se prolongou por 8 minutos.</p>
-            <p>Em 1970 os cientistas soviéticos Alexander Shcherbakov e Mikhail Vasin levaram a ideia da Lua oca adiante ao assinarem um artigo intitulado “A Lua é uma criação de seres inteligentes?”, publicado em uma revista popular da URSS. No texto, os pesquisadores levantaram a hipótese estranha de que o satélite natural da Terra teria sido criado por uma raça extraterrestre. A hipótese ficou conhecida como Teoria Vasin-Shcherbakov.</p>
+            <p class="text--small">A lua é motivo de fascínio desde de sempre para a humanidade. A teoria de que nosso satélite natural não seja natural surgiu após um experimento da missão Apollo 12. Os astronautas intencionalmente deixaram cair o módulo lunar sobre a superfície da lua, então os sismógrafos na lua detectaram um som que foi descrito como um gongo ou um sino que se prolongou por 8 minutos.</p>
+            <p class="text--small">Em 1970 os cientistas soviéticos Alexander Shcherbakov e Mikhail Vasin levaram a ideia da Lua oca adiante ao assinarem um artigo intitulado “A Lua é uma criação de seres inteligentes?”, publicado em uma revista popular da URSS. No texto, os pesquisadores levantaram a hipótese estranha de que o satélite natural da Terra teria sido criado por uma raça extraterrestre. A hipótese ficou conhecida como Teoria Vasin-Shcherbakov.</p>
         </div>
     </section>
     <section class="the-director" id="the-director">
         <img src="./dist/images/roland_emmerich.jpg" alt="O diretor">
         <div class="the-director__text__container">
             <h2 class="title">O diretor</h2>
-            <p>Roland Emmerich é um cineasta e roteirista alemão. Seus filmes geraram lucros de mais de US$ 3 bilhões de doláres, mais de que qualquer outro diretor europeu.</p>
-            <p>Tendo em sua lista de trabalhos realizados filmes de grande bilheteria como:</p>
-            <ul>
+            <p class="text--small">Roland Emmerich é um cineasta e roteirista alemão. Seus filmes geraram lucros de mais de US$ 3 bilhões de doláres, mais de que qualquer outro diretor europeu.</p>
+            <p class="text--small">Tendo em sua lista de trabalhos realizados filmes de grande bilheteria como:</p>
+            <ul class="text--small">
                 <li>-Independence day - 1996;</li>
                 <li>-O patriota - 2000;</li>
                 <li>-O dia depois de amanhã - 2004;</li>
                 <li>-2012 - 2009;</li>
             </ul>
-            <p>Entre tantos outros filmes de sucesso.</p>
+            <p class="text--small">Entre tantos outros filmes de sucesso.</p>
         </div>
     </section>
+    <footer class="text--small">
+        <div class="starring">
+            <ul>
+                <li>
+                    <a href="https://www.facebook.com/HalleBerry">Halle Barry</a>
+                    <div>
+                        
+                    </div>
+                </li>
+                <li>
+                    <a href="https://twitter.com/patrickwilson73">Patrick Wilson</a>
+                </li>
+                <li>
+                    <a href="https://twitter.com/johnbradleywest?">John Bradley-West</a>
+                </li>
+                <li>
+                    <a href="https://twitter.com/KellyYuWenwen">Kelly Yu</a>
+                </li>
+                <li>
+                    <a href="https://twitter.com/charliefplummer">Charlie Plummer</a>
+                </li>
+                <li>
+                    <a href="#">Donald Sutherland</a>
+                </li>
+                <li>
+                    <a href="https://twitter.com/carolbartczak">Carolina Bartczak</a>
+                </li>
+                <li>
+                    <a href="https://twitter.com/realmichaelpena">Michael Peña</a>
+                </li>
+                <li>
+                    <a href="https://twitter.com/katybreier">Katy Breier</a>
+                </li>
+                <li>
+                    <a href="https://twitter.com/emeikwuakor">Eme Ikwuakor</a>
+                </li>
+                <li>
+                    <a href="https://www.facebook.com/StanleyTucci">Stanley Tucci</a>
+                </li>
+                <li>
+                    <a href="https://www.facebook.com/avamarie.w/">Ava Weiss</a>
+                </li>
+                <li>
+                    <a href="https://twitter.com/sbogaert">Stephen Bogaert</a>
+                </li>
+                <li>
+                    <a href="https://twitter.com/jt_silver">Jonathan Maxwell Silver</a>
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <a href="#">Zayn Maloney</a>
+                </li>
+                <li>
+                    <a href="#">Nathaly Thibaul</a>
+                </li>
+                <li>
+                    <a href="#">Josh Cruddas</a>
+                </li>
+                <li>
+                    <a href="#">Azriel Dalman</a>
+                </li>
+                <li>
+                    <a href="https://www.facebook.com/actresskristamarchand/">Krista Marchand</a>
+                </li>
+                <li>
+                    <a href="#">Maxim Roy</a>
+                </li>
+                <li>
+                    <a href="https://twitter.com/ish_kaito">Kaito Ishikawa</a>
+                </li>
+                <li>
+                    <a href="https://twitter.com/Ma_ri_ya_i">Mariya Ise</a>
+                </li>
+                <li>
+                    <a href="https://twitter.com/BONDGIRLBONBOMB">Takako Honda</a>
+                </li>
+                <li>
+                    <a href="https://twitter.com/398Syun">Shunsuke Sakuya</a>
+                </li>
+                <li>
+                    <a href="https://www.facebook.com/chris.sandiford.9/">Chris Sandiford</a>
+                </li>
+                <li>
+                    <a href="https://twitter.com/sebastianpfans">Sebastian Pigot</a>
+                </li>
+                <li>
+                    <a href="https://twitter.com/madela_andreas">Andreas Apergis</a>
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <a href="https://www.facebook.com/RandyThomasFilm/">Randy Thomas</a>
+                </li>
+                <li>
+                    <a href="https://twitter.com/FrankSchorpion">Frank Schorpion</a>
+                </li>
+                <li>
+                    <a href="#">Kwasi Songui</a>
+                </li>
+                <li>
+                    <a href="https://www.facebook.com/tyronebenskin">Tyrone Benskin</a>
+                </li>
+                <li>
+                    <a href="#">Kathleen Fee</a>
+                </li>
+                <li>
+                    <a href="https://twitter.com/hakui891nanasi">Kōsuke Gotō</a>
+                </li>
+                <li>
+                    <a href="https://twitter.com/frankabee">Frank Fiola</a>
+                </li>
+                <li>
+                    <a href="https://twitter.com/kylegatehouse">Kyle Gatehouse</a>
+                </li>
+                <li>
+                    <a href="#">Yuuichi Ishigami</a>
+                </li>
+                <li>
+                    <a href="https://twitter.com/pio_steven">Steven Piovesan</a>
+                </li>
+                <li>
+                    <a href="https://www.linkedin.com/in/d-adam-leblanc-pe-1ab08636">Adam LeBlanc</a>
+                </li>
+                <li>
+                    <a href="#">Gerardo Lo Dico</a>
+                </li>
+                <li>
+                    <a href="#">Jaa Smith-Johnson</a>
+                </li>
+            </ul>
+            <ul class="starring__links">
+                <li>
+                    <a href="#hero">Home</a>
+                </li>
+                <li>
+                    <a href="#sinopse">Sinopse</a>
+                </li>
+                <li>
+                    <a href="#theory">A Teoria</a>
+                </li>
+                <li>
+                    <a href="#the-director">O diretor</a>
+                </li>
+            </ul>
+        </div>
+        <div class="copyright">
+            <p>&copy;Moonfall - Roland Emmerich - Todos os direitos reservados</p>
+        </div>
+    </footer>
+
+    <script src="./src/scripts/main.js"></script>
 </body>
 </html>
